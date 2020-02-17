@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.yanzhenjie:album:2.1.3@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9bd6cb6612cf4d6fb8c29d6950238479/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9bd6cb6612cf4d6fb8c29d6950238479/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9bd6cb6612cf4d6fb8c29d6950238479/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yanzhenjie/album/2.1.3/6b2b124e0b1681fb522252e486ceb2ddaea0d84e/album-2.1.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

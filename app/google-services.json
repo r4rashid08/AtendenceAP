@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "275449444646",
+    "firebase_url": "https://hris-23c46.firebaseio.com",
+    "project_id": "hris-23c46",
+    "storage_bucket": "hris-23c46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275449444646:android:2abb5d735ac6b3b79d69e7",
+        "android_client_info": {
+          "package_name": "com.example.mis_internee.atendence_app_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275449444646-g9tvrj152f8i7svb1fkojf94c1a2dgug.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mis_internee.atendence_app_android",
+            "certificate_hash": "ed1704a55e68547189442ec03a3313acb25b252b"
+          }
+        },
+        {
+          "client_id": "275449444646-2opdld132rr82bqt92b02022it5f3uvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4EtRej7GwUJDnXTkx3rnIpuKYRJeL2EU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275449444646-2opdld132rr82bqt92b02022it5f3uvc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

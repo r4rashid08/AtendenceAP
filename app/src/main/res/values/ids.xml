@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="font_awesome_android_icon" type="id"/>
+    <item name="listView" type="id"/>
+    <item name="listviews" type="id"/>
+
+</resources>

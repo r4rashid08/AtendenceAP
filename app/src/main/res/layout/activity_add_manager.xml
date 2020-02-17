@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.mis_internee.atendence_app_android.Activity.Manager_List">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:layout_height="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:text="ID"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:background="@color/colorPrimary"
+        android:text="Name"
+        android:gravity="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_weight="0.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Action"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="16sp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/lisVtwq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+   <!-- <TextView
+        android:id="@+id/ADD"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:spinnerText="@string/CirclePlus" />
+
+
+       />-->
+
+
+</LinearLayout>

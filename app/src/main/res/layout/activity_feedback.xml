@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mis_internee.atendence_app_android.Activity.Feedback">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/fbList"
+            android:layout_width="match_parent"
+            android:layout_height="332dp"></ListView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/cmt"
+                android:layout_width="330dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/edttext"
+                android:paddingLeft="12dp"
+                android:paddingBottom="5dp"
+                android:hint="Add feedback" />
+
+            <ImageView
+                android:id="@+id/send"
+                android:src="@drawable/send"
+                android:layout_weight="0.1"
+                android:layout_marginTop="5dp"
+                android:layout_width="30dp"
+                android:layout_height="32dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

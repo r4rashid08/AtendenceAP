@@ -1,0 +1,227 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#00555555"
+              android:orientation="vertical"
+              android:layout_gravity="top"
+              android:gravity="center"
+              android:weightSum="1000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="7dp"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="200"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100">
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                             android:id="@+id/myTableLayout"
+                             android:layout_width="fill_parent"
+                             android:layout_height="wrap_content"
+                             android:background="@color/white"
+                           >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:text="Attendance Status"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="false"
+                            android:text="Date"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/Datee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.001"
+                            android:gravity="right"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="false"
+                            android:text="Arrival Time"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/ArTi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.001"
+                            android:gravity="right"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="false"
+                            android:text="Leave Time"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/offTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.001"
+                            android:gravity="right"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="false"
+                            android:text="Status"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="0.001"
+                            android:gravity="right"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <!--<LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+
+                        <Button
+                            android:id="@+id/subIssue"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="21dp"
+                            android:gravity="center"
+                            android:background="@color/lightgrey"
+                            android:spinnerText="submit"></Button>
+                    </LinearLayout>-->
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:weightSum="50">
+
+&lt;!&ndash;
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:orientation="horizontal"
+                android:weightSum="200">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="100"
+                    android:gravity="center|right">
+
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="80dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/round_button"
+                        android:gravity="center"
+                        android:spinnerText="CANCEL"
+                        android:textColor="#ffffffff"
+                        android:textSize="13dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:background="#00555555"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+
+            <Button
+                android:id="@+id/cencle"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Cencle"
+                android:gravity="left"
+                android:textColor="@color/colorAccent"
+                android:textSize="13dp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/subIssue"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Submit Leave"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="13dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

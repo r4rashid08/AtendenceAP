@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.kboyarshinov:autoinflate:0.1.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/29b7b9afb2d3dd3ff8ac08ea394782ae/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/29b7b9afb2d3dd3ff8ac08ea394782ae/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kboyarshinov/autoinflate/0.1.1/b7bccd1d0a3142c13be82a51de06755cfa32d07e/autoinflate-0.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

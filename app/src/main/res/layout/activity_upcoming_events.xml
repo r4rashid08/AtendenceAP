@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+            <com.github.sundeepk.compactcalendarview.CompactCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/calendarr"
+                android:layout_width="fill_parent"
+                android:layout_height="210dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_x="2dp"
+                android:layout_y="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:compactCalendarCurrentDayBackgroundColor="#f451e9"
+                app:compactCalendarCurrentDayIndicatorStyle="no_fill_large_indicator"
+                app:compactCalendarCurrentDayTextColor="#656bff"
+                app:compactCalendarCurrentSelectedDayBackgroundColor="#f451e9"
+                app:compactCalendarCurrentSelectedDayTextColor="@color/white"
+                app:compactCalendarEventIndicatorStyle="small_indicator"
+                app:compactCalendarMultiEventIndicatorColor="#fff"
+                app:compactCalendarShouldSelectFirstDayOfMonthOnScroll="false"
+                app:compactCalendarTargetHeight="250dp"
+                app:compactCalendarTextColor="#656bff"
+                app:compactCalendarTextSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_x="0dp"
+                android:layout_y="210dp"
+                android:background="@color/colorAccent"
+                android:text="Events On Selected Date"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/list_event"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/calendarr"
+                android:layout_x="0dp"
+                android:layout_y="232dp" />
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="167dp"
+                android:layout_below="@+id/list_event"
+                android:layout_x="2dp"
+                android:layout_y="374dp"
+                tools:context=".MapsActivity" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_x="0dp"
+                android:layout_y="558dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="From: "
+                    android:textColor="@color/red"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/fromid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="435dp"
+                android:layout_height="wrap_content"
+                android:layout_x="0dp"
+                android:layout_y="597dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="To: "
+                    android:textColor="@color/red"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/toid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="435dp"
+                android:layout_height="wrap_content"
+                android:layout_x="0dp"
+                android:layout_y="637dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Place Name: "
+                    android:textColor="@color/red"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/place_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_x="0dp"
+                android:layout_y="680dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Details: "
+                    android:textColor="@color/red"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/Detailid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_x="0dp"
+                android:layout_y="736dp"
+                android:text="People are invited:"
+                android:textColor="@color/red" />
+
+            <ListView
+                android:id="@+id/lvBs"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_x="0dp"
+                android:layout_y="755dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_x="0dp"
+                android:layout_y="966dp"
+                android:text="People are interested:"
+                android:textColor="@color/red" />
+
+            <ListView
+                android:id="@+id/lvB1s"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_x="0dp"
+                android:layout_y="988dp"></ListView>
+
+        </AbsoluteLayout>
+    </ScrollView>
+</LinearLayout>

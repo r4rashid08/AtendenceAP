@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mis_internee.atendence_app_android.Activity.Employee_Calendar_Sub_Details">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/employatendence"
+        android:text="Employee id "
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/employatendence"
+        android:text="Employee Name "
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/employatendence"
+        android:text="Employee Designation"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_desig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/employatendence"
+        android:text="Department"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_depart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/employatendence"
+        android:text="Arival time                                        Leave time"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_arrTime"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="ArrTime"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tv_LeaveTime"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Leave"
+        android:textAlignment="center" />
+
+</RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/employatendence"
+        android:text="Attendance Status"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/employatendence"
+        android:text="TRN_TYPE"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_trn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="center" />
+
+
+</LinearLayout>

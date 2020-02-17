@@ -1,0 +1,12 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mis_internee.atendence_app_android.Fragments.Emp_Approved_notification">
+
+   <ListView
+       android:id="@+id/approved"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"></ListView>
+
+</FrameLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_height="match_parent" android:layout_width="match_parent">
+<TableLayout
+    android:id="@+id/myTableLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="400dp"
+    android:gravity="center"
+    android:background="@drawable/edittextboarder"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp">
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:spinnerText="Attendance Status"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textStyle="bold" />-->
+
+        <TableRow android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="89dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="DATE"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.001"
+                android:gravity="right"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="Notification Type"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.001"
+                android:gravity="right"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="Department"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.001"
+                android:gravity="right"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+    <TableRow>
+
+
+    </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="Reason"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/remarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="0.001"
+                android:gravity="right"
+                android:hint="No Reson Found"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+        </TableRow>
+
+    <TableRow android:layout_height="33dp">
+
+
+
+    </TableRow>
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/spinnerround"
+        />
+
+    <EditText
+        android:id="@+id/remarkHod"
+       android:paddingLeft="5dp"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinround"
+        android:hint="Remarks"
+        android:inputType="textMultiLine" />
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/spinner2"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Submit" />
+</TableLayout>
+
+
+</ScrollView>
+

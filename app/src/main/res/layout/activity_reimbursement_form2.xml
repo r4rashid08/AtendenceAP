@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mis_internee.atendence_app_android.Activity.ReimbursementForm">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_marginBottom="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Employee Benifit Reimbursement Form"
+        android:textAlignment="center"
+        android:textColor="@color/darkblue"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="28dp" />
+    <TextView
+        android:text="Nature"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/back_border"
+        android:layout_marginTop="5dp">
+    <Spinner
+        android:id="@+id/nature"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </Spinner>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_ico"
+        android:visibility="gone"
+        android:text="In-Case of Others"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/ed_ico"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Place Of Visit"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/back_border"
+        android:layout_marginTop="5dp">
+    <Spinner
+        android:id="@+id/place"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:text="Orignal Bills Attached?"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/Y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YES"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/N"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO" />
+
+            </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:text="Amounts of Medical Bills only/-"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/back_border"
+        android:layout_marginTop="5dp">
+    <EditText
+        android:id="@+id/amb"
+        android:inputType="number"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+    </LinearLayout>
+    <TextView
+
+        android:text="Amounts of Bills Other Than Medical"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/back_border"
+        android:layout_marginTop="5dp">
+    <EditText
+        android:id="@+id/aob"
+        android:inputType="number"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+    </LinearLayout>
+    <TextView
+        android:text="Grand Total of All Bills"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/back_border"
+        android:layout_marginTop="5dp">
+    <EditText
+        android:id="@+id/allbills"
+        android:inputType="number"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img"
+        android:src="@drawable/ic_menu_camera"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/show_selected_images"/>
+    <Button
+        android:text="Apply"
+        android:id="@+id/submit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:background="@color/darkblue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+</ScrollView>

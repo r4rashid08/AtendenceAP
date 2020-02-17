@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mis_internee.atendence_app_android.Activity.Employee_Calendar_Admin">
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/calendar"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:compactCalendarCurrentDayBackgroundColor="#f451e9"
+        app:compactCalendarCurrentDayIndicatorStyle="no_fill_large_indicator"
+        app:compactCalendarCurrentDayTextColor="#656bff"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#f451e9"
+        app:compactCalendarCurrentSelectedDayTextColor="@color/white"
+        app:compactCalendarEventIndicatorStyle="small_indicator"
+        app:compactCalendarMultiEventIndicatorColor="#fff"
+        app:compactCalendarShouldSelectFirstDayOfMonthOnScroll="false"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextColor="#656bff"
+        app:compactCalendarTextSize="16sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/caldroid_darker_gray"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="visible" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Today Employee Status"
+        android:textColor="@color/jamni"
+        android:textSize="16sp" />
+
+        <ListView
+            android:id="@+id/empList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+</LinearLayout>

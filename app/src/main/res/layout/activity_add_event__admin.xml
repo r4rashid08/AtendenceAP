@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mis_internee.atendence_app_android.Activity.AddEvent_Admin">
+
+
+    <EditText
+        android:id="@+id/event"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Add Event" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginLeft="16dp"
+    android:orientation="horizontal"
+    android:layout_marginRight="16dp"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/place"
+
+        android:layout_width="298dp"
+        android:layout_height="match_parent"
+        android:inputType="textPersonName"
+        android:text="Add Place" />
+
+    <ImageView
+
+        android:layout_width="27dp"
+        android:layout_height="38dp"
+        android:src="@drawable/loc" />
+
+</LinearLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="128dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:layout_marginLeft="16dp"
+        android:text="From"
+        android:textColor="@color/caldroid_black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rectangle"
+        android:inputType="date" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:layout_marginLeft="16dp"
+        android:text="End Date"
+        android:textColor="@color/caldroid_black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/editText43"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rectangle"
+        />
+    <Button
+        android:text="Submit"
+        android:layout_margin="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

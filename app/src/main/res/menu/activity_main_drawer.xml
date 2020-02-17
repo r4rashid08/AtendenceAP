@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/hod_atendence"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="E-Attendance" />
+        <item
+            android:id="@+id/emp_atendence"
+            android:icon="@drawable/empmng"
+            android:title="Employee Management" />
+    <!--    <item
+            android:id="@+id/markAtnd"
+            android:icon="@drawable/addevent"
+            android:title="Mark Attendance" />
+-->
+        <!--<item-->
+            <!--android:id="@+id/events"-->
+            <!--android:icon="@drawable/pendingevent"-->
+            <!--android:title="Upcoming Events" />-->
+
+
+      <!--  <item
+            android:id="@+id/reimb"
+            android:icon="@drawable/reform"
+            android:title="E-Claim" />-->
+        <item
+            android:id="@+id/emp_leave_status"
+            android:icon="@drawable/status"
+            android:title="Employee Leave Status" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/feedback"-->
+                <!--android:icon="@drawable/ic_menu_feedback"-->
+                <!--android:title="feedback" />-->
+            <item
+                android:id="@+id/update"
+                android:icon="@drawable/ic_menu_update"
+                android:title="Update"
+                app:actionViewClass="android.widget.TextView"
+                />
+        </menu>
+    </item>
+
+</menu>

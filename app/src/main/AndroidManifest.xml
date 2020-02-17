@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mis_internee.atendence_app_android">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <compatible-screens>
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="large" />
+    </compatible-screens>
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_icon"
+        android:label="@string/app_name_22"
+        android:networkSecurityConfig="@xml/security_xlm"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning,UnusedAttribute"
+        tools:replace="android:label">
+
+
+        <activity android:name=".Activity.practice"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA1ZNsuaf6SXD9tawLtY31Znz0hxRmMvIs" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="face" />
+
+        <activity
+            android:name=".Activity.Splash_Activity"
+            android:configChanges="keyboardHidden"
+            android:allowBackup="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+
+        <activity android:name=".Activity.User_Registration"
+            tools:ignore="InnerclassSeparator" />
+
+        <activity android:name=".Activity.EmployeeAtendence"
+            tools:ignore="InnerclassSeparator" />
+
+        <activity
+            android:name=".Activity.Popup_Activity_dialog"
+            android:theme="@style/AppTheme.CustomeTheme"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Activity.subIsue"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="InnerclassSeparator" />
+
+        <activity
+            android:name=".Activity.EmployeeLeaveApplication"
+            tools:ignore="InnerclassSeparator" />
+
+        <activity
+            android:name=".Activity.Approval_Form"
+            android:theme="@style/AppTheme.CustomeTheme"
+            tools:ignore="InnerclassSeparator" />
+
+        <activity android:name=".Activity.EmpApprovedList"
+            tools:ignore="InnerclassSeparator"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Activity.Manager_List"
+            android:theme="@style/AppTheme.myTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Activity.add_manager"
+            android:theme="@style/AppTheme.CustomeTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity.EmployeeAttendenceList_Admin"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity.Employee_Calendar_Admin"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity.Employee_Calendar_Sub_Details"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity.Admin_Employee_Attendance"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Activity.AddEvent_Admin"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".Adapter.Chekcbox_Adapter_listView"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity.Advance_leave_submission"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity.MapActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity.select_guest"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Activity.approval_form_2"
+            android:theme="@style/AppTheme.CustomeTheme"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity.Upcoming_events"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Activity.add_manager_approval"
+            android:theme="@style/AppTheme.CustomeTheme" />
+        <activity android:name=".Activity.Feedback"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Activity.test"
+            android:theme="@style/AppTheme.CustomeTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity.fakeSplash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".Activity.Update_Application"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name=".Activity.Attendance_status"
+             android:screenOrientation="portrait"
+            android:parentActivityName=".Activity.MainActivity"
+          >
+         <intent-filter>
+                <action android:name="OPEN_ACTIVITY_1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activity.Emp_notification"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="OPEN_ACTIVITY_2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".FireBaseService.FirebaseMessagingService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".FireBaseService.FirebaseInstanceIDService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Activity.ReimbursementForm"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/addmanagerround"
+    android:layout_height="match_parent"
+    tools:context="com.example.mis_internee.atendence_app_android.Activity.add_manager_approval">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="serif"
+        android:text="Alert..!!!"
+        android:textColor="@color/red"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The following Employee you have selected can manage attendance application if your agree then please click on action for further actions "
+        android:textColor="@color/black" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yes/No" />
+</LinearLayout>

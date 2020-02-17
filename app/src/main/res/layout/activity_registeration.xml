@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:text="Registration"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/font_awesome_android_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/emp_id"
+        android:layout_alignBottom="@+id/emp_id"
+        android:layout_alignLeft="@+id/btnReg"
+        android:layout_alignStart="@+id/btnReg"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:gravity="center_horizontal"
+        android:text="@string/font_awesome_android_icon"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/emp_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="61dp"
+        android:ems="10"
+        android:hint="Employee Id"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/font_awesome_android_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/password"
+        android:layout_alignBottom="@+id/password"
+        android:layout_alignLeft="@+id/font_awesome_android_icon"
+        android:layout_alignStart="@+id/font_awesome_android_icon"
+        android:gravity="center_horizontal"
+        android:text="@string/font_awesome_android_key"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emp_id"
+        android:layout_alignStart="@+id/emp_id"
+        android:layout_below="@+id/emp_id"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName|textPassword" />
+
+
+    <EditText
+        android:id="@+id/con_paswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_below="@+id/password"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/con_paswd"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="44dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="Get Register"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/conPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/con_paswd"
+        android:layout_alignBottom="@+id/con_paswd"
+        android:layout_alignLeft="@+id/font_awesome_android_key"
+        android:layout_alignStart="@+id/font_awesome_android_key"
+        android:gravity="center_horizontal"
+        android:text="@string/conPass"
+        android:textSize="20sp" />
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView5"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:srcCompat="@drawable/151444634875244" />-->
+
+</RelativeLayout>

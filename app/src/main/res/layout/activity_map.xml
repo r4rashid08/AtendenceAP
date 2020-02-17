@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+     android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/emp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/relLayout1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_menu_emp" />
+
+            <EditText
+                android:id="@+id/add_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@+id/emp"
+                android:layout_toRightOf="@+id/emp"
+                android:hint="Event Name" />
+
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relLayout1"
+                tools:context=".MapsActivity" />
+
+            <RelativeLayout
+                android:id="@+id/relLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/add_event"
+                android:background="@drawable/white_border"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/ic_magnify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_menu_search"
+                    android:layout_alignParentLeft="true" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/input_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/ic_magnify"
+                    android:layout_toRightOf="@+id/ic_magnify"
+                    android:background="@null"
+                    android:hint="Enter Address, City or Zip Code"
+                    android:imeOptions="actionSearch"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ic_gps"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/map"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="21dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/loc" />
+
+            <ImageView
+                android:id="@+id/place_picker"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/place_info"
+                android:layout_alignStart="@+id/place_info"
+                android:layout_alignTop="@+id/ic_gps"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_menu_add" />
+
+            <ImageView
+                android:id="@+id/place_info"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/place_picker"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_menu_share" />
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout"
+                android:layout_below="@+id/map"
+                android:layout_marginTop="16dp"
+                android:fontFamily="serif"
+                android:text="From"
+                android:textColor="@color/caldroid_black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/from"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/d1"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/map"
+                    android:editable="false"
+                    android:gravity="center"
+                    android:hint="Date" />
+
+                <EditText
+                    android:id="@+id/t1"
+                    android:layout_width="126dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/map"
+                    android:editable="false"
+                    android:gravity="center"
+                    android:hint="Time" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginTop="16dp"
+                android:fontFamily="serif"
+                android:text="To"
+                android:textColor="@color/caldroid_black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/to"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/d2"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/map"
+                    android:editable="false"
+                    android:gravity="center"
+                    android:hint="Date" />
+
+                <EditText
+                    android:id="@+id/t2"
+                    android:layout_width="126dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/map"
+                    android:gravity="center"
+                    android:editable="false"
+                    android:hint="Time" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginTop="16dp"
+                android:fontFamily="serif"
+                android:text="Guest"
+                android:textColor="@color/caldroid_black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+<LinearLayout
+    android:id="@+id/layout1"
+    android:layout_below="@id/s"
+    android:orientation="horizontal"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/guest"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:hint="Add Guest" />
+
+    <ImageView
+        android:id="@+id/adImg"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/userplus" />
+</LinearLayout>
+            <EditText
+                android:id="@+id/descrp"
+                android:hint="Description:"
+                android:layout_marginTop="5dp"
+                android:gravity="top"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:inputType="textMultiLine" />
+            <Button
+                android:id="@+id/anounce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descrp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Announce" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
+
+
+
+

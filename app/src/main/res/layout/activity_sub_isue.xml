@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="22dp"
+        android:fontFamily="serif"
+        android:text="Select Description"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/album_dp_30"
+        android:layout_marginRight="@dimen/album_dp_30"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/boarderpopup">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/album_dp_30"
+        android:layout_marginRight="@dimen/album_dp_30"
+        android:layout_marginTop="20dp"
+        android:id="@+id/leave_spinner_view"
+
+        android:background="@drawable/boarderpopup">
+
+        <Spinner
+            android:id="@+id/halfspinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:entries="@array/leaveinfo"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_40"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/album_dp_20"
+        android:layout_marginStart="@dimen/album_dp_30"
+        android:layout_marginEnd="@dimen/album_dp_30"
+        android:background="@drawable/boarderpopup"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="3dp"
+            android:textStyle="normal"
+            android:text=" Submit Date "
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+           android:textStyle="normal"
+            android:textColor="@android:color/black"
+            android:text="30-12-12"
+            android:gravity="center"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_35"
+        android:id="@+id/date_view"
+        android:visibility="gone"
+        android:weightSum="1">
+       <TextView
+           android:id="@+id/timein"
+           android:background="@drawable/boarderpopup"
+            android:layout_marginEnd="@dimen/album_dp_10"
+           android:layout_weight="0.5"
+           android:textColor="@android:color/black"
+           android:textStyle="normal"
+           android:textSize="14sp"
+           android:gravity="center"
+           android:layout_marginStart="@dimen/album_dp_10"
+           android:text="Start Time"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/album_dp_40"
+           tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/timeout"
+            android:background="@drawable/boarderpopup"
+
+            android:layout_marginEnd="@dimen/album_dp_10"
+            android:layout_weight="0.5"
+            android:textColor="@android:color/black"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="End time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/album_dp_40"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/rmrks"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginEnd="@dimen/album_dp_30"
+        android:layout_marginStart="@dimen/album_dp_30"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:background="@color/grey"
+        android:gravity="top"
+        android:hint="Description"
+        android:textColorHint="@color/white"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <Button
+        android:id="@+id/sub_btn_leave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="21dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Submit"
+        android:textColor="@color/cardview_light_background"
+        tools:ignore="HardcodedText,PrivateResource" />
+
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:text="TextView" />
+
+</LinearLayout>
+
+</ScrollView>

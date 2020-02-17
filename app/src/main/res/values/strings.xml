@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name_22">Employee Attendance</string>
+
+
+
+    <string-array name="list">
+        <item>APPROVED</item>
+        <item>DISAPPROVED</item>
+
+
+    </string-array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="Logout">Logout</string>
+    <string name="addLeave">Add Advance Leave</string>
+    <string name="EMP_List">Employee List</string>
+    <string name="font_awesome_android_icon">&#xf007;</string>
+    <string name="font_awesome_android_key">&#xF023;</string>
+    <string name="person">&#xF1ae;</string>
+    <string name="Plus">&#xF067;</string>
+    <string name="CirclePlus">&#xF055;</string>
+    <string name="Book">&#xF2ba;</string>
+    <string name="bell">&#xF0f3;</string>
+    <string name="conPass">&#xF0EB;</string>
+    <string name="logt">&#xf201;</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="app_name1">MultichoiceTutorial</string>
+    <string name="make_an_order">Make an order</string>
+    <string name="dialog_title">Employees available in List</string>
+    <string name="ok_label">OK</string>
+    <string name="dismiss_label">Dismiss</string>
+    <string name="clear_all_label">Clear all</string>
+
+    <string-array name="emploe">
+        <item>Amir</item>
+        <item>Hanif</item>
+        <item>Akram</item>
+        <item>Abdul Razaq</item>
+        <item>Sachin</item>
+        <item>Ab Deviliars</item>
+        <item>Kinely</item>
+        <item>Michel Cook</item>
+        <item>Ali hamza</item>
+        <item>sadsadas</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder spinnerText -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="text">was  \n wsa
+    </string>
+
+    <string-array name="leaveinfo">
+        <item>Half Leave</item>
+        <item>full Leave</item>
+
+    </string-array>
+
+
+
+    <string-array name="month">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+</resources>

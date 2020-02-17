@@ -1,0 +1,280 @@
+<LinearLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/caldroid_lighter_gray"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Select Date"
+                android:textAllCaps="true"
+                android:layout_marginTop="@dimen/album_dp_20"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/album_dp_40"
+                android:text=" 08-2020"
+
+                android:gravity="center"
+                android:id="@+id/leave_pending_date"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/boarder"
+                android:layout_marginStart="@dimen/album_dp_20"
+                android:layout_marginBottom="10dp"/>
+          <!--  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/album_dp_40"
+                android:background="@drawable/boarder"
+                android:layout_marginStart="@dimen/album_dp_20"
+                android:layout_marginEnd="@dimen/album_dp_20"
+                android:layout_marginBottom="@dimen/album_dp_20"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/album_dp_40"
+                    android:id="@+id/pending_leave_month"
+                    android:entries="@array/month"
+                    />
+            </LinearLayout>-->
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight=".9">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="3dp"
+                        android:layout_height="@dimen/album_dp_10"
+                        android:src="@drawable/green_dot"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Approved"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:textAllCaps="true"
+                        android:layout_marginEnd="@dimen/album_dp_20"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="3dp"
+                        android:layout_height="@dimen/album_dp_10"
+                        android:src="@drawable/red_dot"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="disApproved"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/black"
+                        android:textAllCaps="true"
+                        android:layout_marginEnd="@dimen/album_dp_20"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="3dp"
+                        android:layout_height="@dimen/album_dp_10"
+                        android:src="@drawable/dot_orange"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Pending"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/black"
+                        android:textAllCaps="true"
+                        android:layout_marginEnd="@dimen/album_dp_20"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/darkblue"
+        android:orientation="horizontal"
+        android:divider="@color/black"
+        android:weightSum="5"
+        android:layout_height="30dp"
+        tools:ignore="UselessParent">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:gravity="center"
+            android:text="SR#"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:text="Leave type"
+            android:gravity="center"
+            android:textAllCaps="true"
+
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="DATE"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Hod status"
+            android:textAllCaps="true"
+
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=" HR STATUS"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/album_dp_10"
+        android:id="@+id/swipe_refresh">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pending_leave_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/album_dp_10" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!--  <LinearLayout
+          android:id="@+id/LL"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+
+          <com.google.android.material.tabs.TabLayout
+              android:id="@+id/tab_layout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/imglay"
+              android:elevation="6dp"
+              android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+          <androidx.viewpager.widget.ViewPager
+              android:id="@+id/pager"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="fill_parent"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true"
+              android:layout_below="@+id/tab_layout" />
+      </LinearLayout>
+
+      <FrameLayout
+          android:id="@+id/fm"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true" />-->
+</LinearLayout>

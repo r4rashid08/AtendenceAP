@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context="com.example.mis_internee.atendence_app_android.Activity.Splash_Activity">
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progressBar"-->
+        <!--style="?android:attr/progressBarStyle"-->
+        <!--android:layout_width="174dp"-->
+        <!--android:layout_height="169dp"-->
+        <!--android:background="@color/red"-->
+        <!--tools:layout_editor_absoluteX="105dp"-->
+        <!--tools:layout_editor_absoluteY="145dp" />-->
+    <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:spinnerText="textView" />-->
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_icon" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="E-Attendance"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_marginTop="50dp"
+        android:gravity="bottom"
+        android:text="Committed to Excellence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<ProgressBar
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/version"
+        android:hint="Version"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
